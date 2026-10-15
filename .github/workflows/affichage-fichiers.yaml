@@ -1,0 +1,16 @@
+name: Affichage fichiers
+
+on:
+  workflow_dispatch:
+
+jobs:
+  affichage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Récupérer le code du runner
+      uses: actions/checkout@v4
+    - name: Afficher les fichiers récupérés sur le runner
+      run: |
+       echo 'Liste des fichiers:'
+       ls -al
