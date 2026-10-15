@@ -49,5 +49,11 @@ jobs:
          name: rapport-checkstyle
          path: target/site/
 
+      - name: Publier le rapport SpotBugs
+        uses: actions/upload-artifact@v7
+        with:
+         name: rapport-spotbugs
+         path: target/spotbugs/
+
       - name: Analyser avec CodeQL
         uses: github/codeql-action/analyze@v4
