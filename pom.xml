@@ -114,7 +114,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<configLocation>google_checks.xml</configLocation>
+					<configLocation>checkstyle.xml</configLocation>
 					<consoleOutput>true</consoleOutput>
 					<failsOnError>false</failsOnError>
 				</configuration>
@@ -137,7 +137,7 @@
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.6.0</version>
 				<configuration>
-					<configLocation>google_checks.xml</configLocation>
+					<configLocation>checkstyle.xml</configLocation>
 				</configuration>
 			</plugin>
 		</plugins>
