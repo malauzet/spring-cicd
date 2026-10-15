@@ -11,6 +11,11 @@ jobs:
       - name: Récupérer le code source sur le runner
         uses: actions/checkout@v7
 
+      - name: Afficher les fichiers récupérés sur le runner
+        run: |
+          echo 'Liste des fichiers:'
+          ls -al
+
       - name: Configurer JDK 21
         uses: actions/setup-java@v6
         with:
