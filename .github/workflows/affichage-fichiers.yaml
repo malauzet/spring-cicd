@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Récupérer le code du runner
-      uses: actions/checkout@v7.0.1
+      uses: actions/checkout@v7
     - name: Afficher les fichiers récupérés sur le runner
       run: |
        echo 'Liste des fichiers:'
